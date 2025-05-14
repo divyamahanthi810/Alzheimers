@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alzheimer Diagnosis</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      background-image: url('static/images/brain.jpg');
+      background-size: cover;
+      background-color: #7abed5; no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .top-nav button:hover{
+        background-color: #ebc19c;
+    }
+
+    .top-nav a {
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+        background-color: #ebc19c;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      width: 350px;                /* Decreased width */
+      padding: 15px;               /* Adjusted padding */
+      font-size: 1.8em;
+      color: white;
+      background-color: #ebc19c;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      align-self: center;          /* Ensures centering inside flex column */
+    }
+
+    .hero button:hover {
+      background-color: #d4a67d;
+    }
+
+
+    .upload-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="top-nav">
+        <a href="/" class="button">Home</a>
+        <a href="/index" class="button">Diagnosis</a>
+    </div>
+    <h1>Alzheimer Disease Diagnosis</h1>
+    <button onclick="window.location.href='/index'">Get Diagnosis</button>
+  </div>
+
+  <div class="upload-section">
+    <h2>Upload Brain Image</h2>
+    <input type="file" accept="image/*">
+  </div>
+
+</body>
+</html>
